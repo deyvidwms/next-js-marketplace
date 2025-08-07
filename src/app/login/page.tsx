@@ -52,7 +52,7 @@ export default function LoginPage() {
 
   return (
     <div className="min-h-screen flex">
-      <div className="flex-1 flex items-center justify-center min-h-screen px-4 sm:px-6 lg:px-20 xl:px-24 py-4">
+      <div className="flex-1 flex items-center justify-center min-h-screen px-4 sm:px-6 py-4">
         <div className="flex flex-col justify-between h-full mx-auto w-full max-w-sm gap-4 lg:w-96">
           <header className="flex items-center">
             <Image src="/logo.svg" alt="Logo" width={140} height={40} />
@@ -284,14 +284,16 @@ export default function LoginPage() {
         </div>
       </div>
 
-      <div className="hidden lg:block relative w-0 flex-1">
-        <Image
-          className="absolute inset-0 h-full w-full object-cover"
-          src="/login-background.svg"
-          alt="Login background"
-          fill
-          priority
-        />
+      <div className="flex-1 hidden lg:flex justify-center items-center my-4 mr-4">
+        <div className="relative w-full h-full max-w-[1034px] max-h-[1032px] rounded-lg overflow-hidden bg-gradient-to-b from-blue-300 to-blue-200">
+          <Image
+            src="/login-woman.svg"
+            alt="Login background"
+            fill
+            className="object-cover"
+            priority
+          />
+        </div>
       </div>
     </div>
   );
